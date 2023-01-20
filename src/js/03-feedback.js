@@ -25,6 +25,9 @@ if (localStorage.getItem('LOCALSTORAGE_KEY') !== null) {
     const savedKeysJson = localStorage.getItem('LOCALSTORAGE_KEY')
     
     const savedKeysObj = JSON.parse(savedKeysJson)
+
+    keysObj.email = savedKeysObj.email
+    keysObj.message = savedKeysObj.message
     
     form.elements.email.value = savedKeysObj.email
     form.elements.message.value = savedKeysObj.message
@@ -32,11 +35,7 @@ if (localStorage.getItem('LOCALSTORAGE_KEY') !== null) {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    keysObj.email = form.elements.email.value
-    keysObj.message = form.elements.message.value
+    console.log(keysObj)
     form.reset()
     localStorage.clear()
-    console.log(keysObj)
-    
-    
 })
