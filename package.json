@@ -4,18 +4,18 @@
   "description": "",
   "homepage": "https://danypryzrak.github.io/goit-js-hw-08",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "start": "parcel index.html",
+    "build": "parcel build *.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/danypryzrak.github.io/goit-js-hw-08"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/danypryzrak.github.io/goit-js-hw-08/issues"
   },
   "dependencies": {
     "@vimeo/player": "^2.18.0",
